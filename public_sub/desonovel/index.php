@@ -7,9 +7,6 @@ const XBASE_URL = "https://desonovel.vnlx.org";
 
 function fixup_hostname(string $str): string
 {
-	$out = str_replace("https://".BASE_HOSTNAME, "https://".XBASE_HOSTNAME, $str);
-	$out = str_replace("http://".BASE_HOSTNAME, "http://".XBASE_HOSTNAME, $out);
-	$out = str_replace("//".BASE_HOSTNAME, "//".XBASE_HOSTNAME, $out);
 	$out = str_replace(BASE_HOSTNAME, XBASE_HOSTNAME, $out);
 	return $out;
 }
